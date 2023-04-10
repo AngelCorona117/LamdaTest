@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block content %}
+
+    <div class="box">
+        <div class="hero">
+            <h2>Login</h2>
+        </div>
+    
+        <form action="/login" method="post">
+            <div class="inputBox">
+                <input autocomplete="off" autofocus class="" id="username" name="username" type="text" required>
+                <span>Username</span>
+            </div>
+            <div class="inputBox">
+                <input autocomplete="off" autofocus class="" id="password" name="password" type="password" required
+                    minlength="8">
+                <span>Password</span>
+            </div>
+
+            <button class="btn border" type="submit">Log in</button>
+        </form>
+    </div>
+{% endblock %}

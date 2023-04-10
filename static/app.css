@@ -1,0 +1,396 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #D0D5E2;
+}
+
+a {
+    font-family: "Segoe UI", sans-serif;
+    padding: none;
+    text-decoration: none;
+    color: black;
+    margin: none;
+}
+
+.nav-bar {
+    color: #D0D5E2;
+    background-color: #374187;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+}
+
+.nav-bar a {
+    color: #D0D5E2;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.nav-bar a:hover {
+    display: inline-block;
+    transform: translateY(-2px);
+
+}
+
+.logo {
+    filter: invert(93%) sepia(3%) saturate(1103%) hue-rotate(191deg) brightness(94%) contrast(88%);
+}
+
+.nav-buttons {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+}
+
+.btn {
+    background-color: inherit;
+    border: 1px solid #374187;
+    color: #374187;
+    margin: 0%;
+    padding: 0.3em 1em;
+}
+
+.btn:hover {
+    background-color: #374187;
+    color: #D0D5E2;
+}
+
+.container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-radius: 1%;
+    margin: 4%;
+}
+
+.container .item img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.hidden {
+    display: none;
+}
+
+.option {
+    padding: none;
+    margin: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#select-display {
+    background-color: #374187;
+    border: none;
+}
+
+.display-option a {
+    display: flex;
+    justify-content: left;
+    margin: 3px;
+    padding: 7px 1.3em 5px 7px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.display-option a:hover {
+    transform: translateY(-2px);
+    color: #788ed6;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.box .btn {
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+.box .hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #788ed6;
+    color: #D0D5E2;
+    padding: 1em 0%;
+    margin: 0% 0% 1em 0%;
+}
+
+.box form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin: 0.5em 0%;
+}
+
+.inputBox input {
+    background-color: #D0D5E2;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #374187;
+    border-radius: 5px;
+    outline: none;
+    color: #374187;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: #374187;
+    font-size: 1em;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #788ed6;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #D0D5E2;
+    border-left: 1px solid #788ed6;
+    border-right: 1px solid #788ed6;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #788ed6;
+}
+
+#main-option-container {
+    display: none;
+}
+
+form .border {
+    border-radius: 5px;
+}
+
+#HERO {
+    color: #374187;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+#github {
+    width: 120px;
+    height: 40px;
+}
+
+#profile {
+    width: 30px;
+    height: 20px;
+    padding-left: 7px;
+}
+
+.github-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.github-contact:nth-child(2) {
+    order: 3;
+}
+
+.github-contact:nth-child(3) {
+    order: 2;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #374187;
+    position: sticky;
+    top: 100%;
+}
+
+#myprofile a {
+    display: flex;
+    align-items: center;
+
+}
+
+#profile-text {
+    color: #D0D5E2;
+    font-family: "Segoe UI", sans-serif;
+    font-stretch: extra-expanded;
+    padding-left: 7px;
+}
+
+#linkedin {
+    filter: invert(86%) sepia(6%) saturate(31%) hue-rotate(190deg) brightness(120%) contrast(110%);
+    width: 120px;
+    height: 50px;
+}
+
+#gmail {
+    width: 40px;
+    height: 30px;
+}
+
+.alternative {
+    color: #374187;
+}
+
+.alternative a {
+    color: #374187;
+    transition: all 0.5s ease-in-out;
+}
+
+.alternative a:hover {
+    color: #788ed6;
+}
+
+.danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.7rem;
+}
+
+.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 0.7rem;
+}
+
+.info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    padding: 0.7rem;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 0.7rem;
+}
+
+@media screen and (min-width: 570px) {
+
+    .github-contact:nth-child(2) {
+        order: 2;
+    }
+
+    .github-contact:nth-child(3) {
+        order: 3;
+    }
+}
+
+
+@media screen and (min-width: 790px) {
+    .container .item img{
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .item {
+        width: calc(50% - 1%);
+        margin: 0.5%;
+    }
+
+    .nav-bar #LambdaTestLogo {
+        display: block;
+    }
+
+    #select-display {
+        display: none;
+    }
+
+    .box .hero {
+        width: 70%;
+    }
+
+    .box form {
+        width: 70%;
+    }
+
+    #main-option-container {
+        display: block;
+    }
+
+    .nav-buttons {
+        width: 98%;
+
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 999px) {
+    .box .hero {
+        width: 450px;
+    }
+
+    .box form {
+        width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 1299px) {
+    .container .item img{
+        min-height: 320px;
+        max-height: 320px;
+    }
+
+
+}

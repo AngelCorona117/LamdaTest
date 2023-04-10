@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<h1 id="HERO">LambdaTest for logs visualitation</h1>
+
+<nav class="nav-buttons">
+  <button class="btn">All</button>
+  <button class="btn">By Log count</button>
+  <button class="btn">By Log Type</button>
+  <button class="btn">By Log Level</button>
+  <button class="btn">By status code</button>
+</nav>
+<br>
+<nav class="nav-buttons hidden" id="avgORtotal">
+  <button class="btn">Averange</button>
+  <button class="btn">Total</button>
+</nav>
+
+<div class="container">
+  {% for i in range(imageList|length) %}
+  <div class="item " id="item-{{ i }}">
+    <img src="{{ imageList[i] }}" alt="{{ imageList[i] }}">
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
